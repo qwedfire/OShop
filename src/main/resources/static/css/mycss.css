@@ -1,0 +1,124 @@
+.lineBox {
+    position: fixed !important;
+    bottom: 30%;
+    right: 0px;
+    left: auto;
+    z-index: 999999;
+}
+
+.lineItem {
+    cursor: pointer;
+    width: 50px;
+    height: 55px;
+    background: #01060e;
+    margin-bottom: 1px;
+    color: #fff;
+    line-height: 55px;
+    text-align: center;
+    position: relative;
+}
+
+.lineItem .layui-icon {
+    font-size: 26px;
+}
+
+.lineItem:hover {
+    opacity: 1.8;
+}
+
+.lineTop {
+    margin-top: 4px;
+}
+
+.lineTip {
+    border-radius: 2px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
+    position: absolute;
+    top: 0px;
+    right: 59px;
+    color: #000;
+    padding: 0 10px;
+    background: #fff;
+    display: none;
+}
+
+.lineTip:before, .lineTip:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-left-color: rgba(255, 255, 255, 1);
+    right: -16px;
+    top: 10px;
+    z-index: 1;
+}
+
+.lineTip:after {
+    right: -18px;
+    border-left-color: rgb(237, 237, 237);
+    z-index: 0;
+}
+
+.lineWechat {
+    width: 100px;
+    height: 100px;
+    padding: 0px;
+}
+ .product {
+     position: relative;
+     display: inline-block;
+ }
+
+.product-image {
+    width: 200px;
+    height: 200px;
+    /* ?????? */
+}
+
+.icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none; /* ??????? */
+}
+
+.product:hover .icons {
+    display: block; /* ???????????? */
+}
+
+.cart-icon, .search-icon, .heart-icon {
+    font-size: 20px;
+    margin: 5px;
+    /* ???? */
+}
+
+.user-icon {
+    font-size: 20px;
+    color: #333; /* ?????? */
+}
+/*?????*/
+ .notification {
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+     padding: 30px;
+     background-color: #4cae4c;
+     color: black;
+     border-radius: 15px;
+     display: none;
+ }
+/* ??????? */
+.cart-quantity {
+    color: red;
+    /*background-color: yellow; !* ????????????? *!*/
+    font-weight: bold;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    /*border-radius: 50%;*/
+    padding: 4px 8px;
+    font-size: 18px;
+}

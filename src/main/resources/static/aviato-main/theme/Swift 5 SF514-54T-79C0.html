@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="en">
+  <head>
+    <!-- 基本頁面設定
+  ================================================== -->
+    <meta charset="utf-8" />
+    <title>Original Shop</title>
+
+    <!-- 移動特定元數據
+================================================== -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Construction Html5 Template" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
+    />
+    <meta name="author" content="Themefisher" />
+    <meta name="generator" content="Themefisher Constra HTML Template v1.0" />
+
+    <!-- 頁籤圖片(icon) -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="images/oShopBlack-no.png"
+    />
+    <!-- 圖片(icon)字體 -->
+    <link rel="stylesheet" href="plugins/themefisher-font/style.css" />
+    <!-- 引用css樣式 bootstrap.min -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+    <!-- 頁面主體樣式CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+      .price {
+        font-size: 18px;
+        color: #333;
+      }
+
+      .original-price {
+        text-decoration: line-through;
+        margin-right: 10px;
+      }
+
+      .new-price {
+        color: #333;
+        font-weight: bold;
+      }
+
+      .rating {
+        display: inline-block;
+      }
+
+      .star {
+        font-size: 1.5em;
+        color: rgb(239, 239, 21);
+        cursor: pointer;
+      }
+
+      .star222 {
+        font-size: 1.5em;
+        color: #ccc;
+        cursor: pointer;
+      }
+      /*
+.star:hover,
+.star:focus {
+  color: #ff0;
+}
+
+.star.active {
+  color: #ff0;
+} */
+
+      .container222 {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        gap: 15px;
+      }
+
+      .item222 {
+        padding: 0px;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+
+  <body id="body">
+	<!-- 頁首區塊 -->
+	<section class="top-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-xs-12 col-sm-4">
+					<div class="contact-number">
+						<span><img src="../theme/images/oShopBlack.png" style="width: 60px;"></span>
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12 col-sm-4">
+					<!-- 網站標誌(Logo) -->
+					<div class="logo text-center">
+						<a href="index.html">
+							<!-- 頁首標題欄 -->
+							<svg width="435px" height="30px" viewBox="0 0 355 40" version="1.1"
+								xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+									font-size="40" font-family="AustinBold, Austin" font-weight="bold">
+									<g id="Group" transform="translate(-108.000000, -297.000000)" fill="#000000">
+										<text id="AVIATO">
+											<tspan x="158.94" y="325">Original Shop</tspan>
+										</text>
+									</g>
+								</g>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12 col-sm-4">
+					<!-- 購物車 -->
+					<ul class="top-menu text-right list-inline">
+						<li class="dropdown cart-nav dropdown-slide">
+							<a href="#!" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"><i
+									class="tf-ion-android-cart"></i>購物車</a>
+							<div class="dropdown-menu cart-dropdown">
+								<!-- 購物車內容1 -->
+								<div class="media">
+									<a class="pull-left" href="#!">
+										<img class="media-object" src="images/shop/cart/cart-1.jpg" alt="image" />
+									</a>
+									<div class="media-body">
+										<h4 class="media-heading"><a href="#!">筆電</a></h4>
+										<div class="cart-price">
+											<span>1 x</span>
+											<span>1250.00</span>
+										</div>
+										<h5><strong>$1200</strong></h5>
+									</div>
+									<a href="#!" class="remove"><i class="tf-ion-close"></i></a>
+								</div><!-- / 購物車內容1 -->
+								<!-- 購物車內容2 -->
+								<div class="media">
+									<a class="pull-left" href="#!">
+										<img class="media-object" src="images/shop/cart/cart-2.jpg" alt="image" />
+									</a>
+									<div class="media-body">
+										<h4 class="media-heading"><a href="#!">耳機</a></h4>
+										<div class="cart-price">
+											<span>1 x</span>
+											<span>1250.00</span>
+										</div>
+										<h5><strong>$1200</strong></h5>
+									</div>
+									<a href="#!" class="remove"><i class="tf-ion-close"></i></a>
+								</div><!-- / 購物車內容2 -->
+
+								<div class="cart-summary">
+									<span>合計</span>
+									<span class="total-price">$1799.00</span>
+								</div>
+								<ul class="text-center cart-buttons">
+									<li><a href="cart.html" class="btn btn-small">檢視購物車</a></li>
+									<li><a href="checkout.html" class="btn btn-small btn-solid-border">查看</a></li>
+								</ul>
+							</div>
+
+						</li><!-- / 購物車 -->
+
+						<!-- 查詢 -->
+						<li class="dropdown search dropdown-slide">
+							<a href="#!" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"><i
+									class="tf-ion-ios-search-strong"></i> 查詢</a>
+							<ul class="dropdown-menu search-dropdown">
+								<li>
+									<form action="post"><input type="search" class="form-control"
+											placeholder="Search..."></form>
+								</li>
+							</ul>
+						</li><!-- / 查詢 -->
+
+						<!-- 語言選擇 -->
+						<li class="commonSelect">
+							<select class="form-control">
+								<option>英文</option>
+								<option>中文</option>
+								<option>日文</option>
+							</select>
+						</li><!-- / 語言選擇 -->
+
+					</ul><!-- / .nav .navbar-nav .navbar-right -->
+				</div>
+			</div>
+		</div>
+	</section><!-- 頁首區塊結束 -->
+
+	<!-- 導覽列區塊 -->
+	<section class="menu">
+		<nav class="navbar navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<h2 class="menu-title">主選單</h2>
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+						aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+				</div><!-- / .navbar-header -->
+
+				<!-- Navbar Links -->
+				<div id="navbar" class="navbar-collapse collapse text-center">
+					<ul class="nav navbar-nav">
+
+					<!-- Home -->
+					<li class="dropdown ">
+						<a href="index.html">回首頁</a>
+					</li><!-- / Home -->
+
+						<!-- 商品 -->
+						<li class="dropdown dropdown-slide">
+							<a href="#!" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
+								data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">商品 <span
+									class="tf-ion-ios-arrow-down"></span></a>
+							<div class="dropdown-menu">
+								<div class="row">
+
+									<!-- 筆電 -->
+									<div class="col-lg-6 col-md-6 mb-sm-3">
+										<ul>
+											<li class="dropdown-header">筆電&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</li>
+											<li role="separator" class="divider"></li>
+											<li><a href="product-single.html">APPLES 蘋果</a></li>
+											<li><a href="product-single.html">ASUS 華碩</a></li>
+											<li><a href="product-single.html">ACER 宏碁</a></li>
+										</ul>
+									</div>
+
+									<!-- 周邊 -->
+									<div class="col-lg-6 col-md-6 mb-sm-3">
+										<ul>
+											<li class="dropdown-header">周邊&emsp;</li>
+											<li role="separator" class="divider"></li>
+											<li><a href="product-single.html">滑鼠</a></li>
+											<li><a href="product-single.html">耳機</a></li>
+											<li><a href="product-single.html">麥克風</a></li>
+										</ul>
+									</div>
+
+								</div><!-- / .row -->
+							</div><!-- / .dropdown-menu -->
+						</li><!-- / 商品 -->
+
+
+						<!-- 會員 -->
+						<li class="dropdown dropdown-slide">
+							<a href="#!" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
+								data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">會員 </a>
+							<ul class="dropdown-menu">
+								<li><a href="signin.html">註冊</a></li>
+								<li><a href="login.html">登入</a></li>
+							</ul>
+						</li><!-- / 會員 -->
+
+
+
+						<!-- 購物體驗 -->
+						<li class="dropdown dropdown-slide">
+							<a href="blog-full-width.html" class="dropdown-toggle" data-toggle="dropdown"
+								data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true"
+								aria-expanded="false">購物體驗 </a>
+						</li><!-- / 購物體驗 -->
+
+						<!-- 關於我們 -->
+						<li class="dropdown dropdown-slide">
+							<a href="#!" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
+								data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">關於我們 </a>
+							<ul class="dropdown-menu">
+								<li><a href="about.html">公司簡介</a></li>
+								<li><a href="contact.html">聯絡我們</a></li>
+							</ul>
+					</ul>
+					</li><!-- / 關於我們 -->
+					</ul><!-- / .nav .navbar-nav -->
+
+				</div>
+				<!--/.navbar-collapse 導覽列 -->
+			</div><!-- / .container -->
+		</nav>
+	</section><!-- 導覽列區塊結束 -->
+
+    <section class="single-product">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <ol class="breadcrumb">
+              <li style="font-size: 18px"><a href="index.html">首頁</a></li>
+              <li style="font-size: 18px"><a href="shop.html">商店</a></li>
+              <li style="font-size: 18px"><a href="shop.html">Swift 5</a></li>
+              <li style="font-size: 18px" class="active">SF514-54T-79C0</li>
+            </ol>
+          </div>
+          <div class="col-md-6">
+            <ol class="product-pagination text-right">
+              <!-- <li><a href="blog-left-sidebar.Html"><i class="tf-ion-ios-arrow-left"></i> Next </a></li> -->
+              <!-- <li><a href="blog-left-sidebar.Html">Preview <i class="tf-ion-ios-arrow-right"></i></a></li> -->
+            </ol>
+          </div>
+        </div>
+        <div class="row mt-20">
+          <div class="col-md-6">
+            <div class="single-product-slider">
+              <div
+                id="carousel-custom"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-outer">
+                  <!-- me art lab slider -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img
+                        src="images/single-product/SF514-54T-79C0/SF514-54T-79C0-1.png"
+                        alt=""
+                        data-zoom-image="images/single-product/SF514-54T-79C0/SF514-54T-79C0-1.png"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="images/single-product/SF514-54T-79C0/SF514-54T-79C0-2.png"
+                        alt=""
+                        data-zoom-image="images/single-product/SF514-54T-79C0/SF514-54T-79C0-2.png"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="images/single-product/SF514-54T-79C0/SF514-54T-79C0-3.png"
+                        alt=""
+                        data-zoom-image="images/single-product/SF514-54T-79C0/SF514-54T-79C0-3.png"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="images/single-product/SF514-54T-79C0/SF514-54T-79C0-4.png"
+                        alt=""
+                        data-zoom-image="images/single-product/SF514-54T-79C0/SF514-54T-79C0-4.png"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="images/single-product/SF514-54T-79C0/SF514-54T-79C0-5.png"
+                        alt=""
+                        data-zoom-image="images/single-product/SF514-54T-79C0/SF514-54T-79C0-5.png"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="images/single-product/SF514-54T-79C0/SF514-54T-79C0-6.png"
+                        alt=""
+                        data-zoom-image="images/single-product/SF514-54T-79C0/SF514-54T-79C0-6.png"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="images/single-product/SF514-54T-79C0/SF514-54T-79C0-7.png"
+                        alt=""
+                        data-zoom-image="images/single-product/SF514-54T-79C0/SF514-54T-79C0-7.png"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="images/single-product/SF514-54T-79C0/SF514-54T-79C0-8.png"
+                        alt=""
+                        data-zoom-image="images/single-product/SF514-54T-79C0/SF514-54T-79C0-8.png"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- sag sol -->
+                  <a
+                    class="left carousel-control"
+                    href="#carousel-custom"
+                    data-slide="prev"
+                  >
+                    <i class="tf-ion-ios-arrow-left"></i>
+                  </a>
+                  <a
+                    class="right carousel-control"
+                    href="#carousel-custom"
+                    data-slide="next"
+                  >
+                    <i class="tf-ion-ios-arrow-right"></i>
+                  </a>
+                </div>
+
+                <!-- thumb -->
+                <ol class="carousel-indicators mCustomScrollbar meartlab">
+                  <li
+                    data-target="#carousel-custom"
+                    data-slide-to="0"
+                    class="active"
+                  >
+                    <img
+                      src="images/single-product/SF514-54T-79C0/SF514-54T-79C0-1.png"
+                      alt=""
+                    />
+                  </li>
+                  <li data-target="#carousel-custom" data-slide-to="1">
+                    <img
+                      src="images/single-product/SF514-54T-79C0/SF514-54T-79C0-2.png"
+                      alt=""
+                    />
+                  </li>
+                  <li data-target="#carousel-custom" data-slide-to="2">
+                    <img
+                      src="images/single-product/SF514-54T-79C0/SF514-54T-79C0-3.png"
+                      alt=""
+                    />
+                  </li>
+                  <li data-target="#carousel-custom" data-slide-to="3">
+                    <img
+                      src="images/single-product/SF514-54T-79C0/SF514-54T-79C0-4.png"
+                      alt=""
+                    />
+                  </li>
+                  <li data-target="#carousel-custom" data-slide-to="4">
+                    <img
+                      src="images/single-product/SF514-54T-79C0/SF514-54T-79C0-5.png"
+                      alt=""
+                    />
+                  </li>
+                  <li data-target="#carousel-custom" data-slide-to="5">
+                    <img
+                      src="images/single-product/SF514-54T-79C0/SF514-54T-79C0-6.png"
+                      alt=""
+                    />
+                  </li>
+                  <li data-target="#carousel-custom" data-slide-to="6">
+                    <img
+                      src="images/single-product/SF514-54T-79C0/SF514-54T-79C0-7.png"
+                      alt=""
+                    />
+                  </li>
+                  <li data-target="#carousel-custom" data-slide-to="7">
+                    <img
+                      src="images/single-product/SF514-54T-79C0/SF514-54T-79C0-8.png"
+                      alt=""
+                    />
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="single-product-details">
+              <h1>Swift 5 SF514-54T 筆記型電腦</h1>
+              <p class="product-price" style="font-size: 20px">
+                機型： SF514-54T-79C0
+              </p>
+
+              <br />
+
+              <p class="product-description mt-20" style="font-size: 20px">
+                Swift 5 是最輕巧的1 14 吋掀蓋式筆記型電腦，僅 990
+                公克的重量搭配強大的 NVIDIA®
+                顯示卡，專為全天攜帶外出工作娛樂而設計。 本產品亦搭載最新 Intel®
+                Core™ CPU，機身厚度僅 14.95 公釐，強大設計值得您信賴。
+              </p>
+              <!-- <div class="color-swatches">
+						<span>color:</span>
+						<ul>
+							<li>
+								<a href="#!" class="swatch-violet"></a>
+							</li>
+							<li>
+								<a href="#!" class="swatch-black"></a>
+							</li>
+							<li>
+								<a href="#!" class="swatch-cream"></a>
+							</li>
+						</ul>
+					</div> -->
+              <!-- <div class="product-size">
+						<span>Size:</span>
+						<select class="form-control">
+							<option>S</option>
+							<option>M</option>
+							<option>L</option>
+							<option>XL</option>
+						</select>
+					</div> -->
+
+              <br />
+
+              <div class="price">
+                <!-- <span class="original-price">$43,000</span> -->
+                <span class="new-price">$42,900</span>
+              </div>
+
+              <br />
+
+              <div class="product-quantity">
+                <!-- <span>數量:</span> -->
+                <div class="product-quantity-slider">
+                  <input
+                    id="product-quantity"
+                    type="text"
+                    value="0"
+                    name="product-quantity"
+                    style="text-align: center"
+                  />
+                </div>
+              </div>
+
+              <br />
+
+              <!-- <div class="product-category">
+						<span>Categories:</span>
+						<ul>
+							<li><a href="product-single.Html">Products</a></li>
+							<li><a href="product-single.Html">Soap</a></li>
+						</ul>
+					</div> -->
+              <a href="cart.html" class="btn btn-main mt-20">加入購物車</a>
+
+              <br />
+              <br />
+            </div>
+          </div>
+        </div>
+
+        <br />
+        <br />
+
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="tabCommon mt-20">
+              <ul class="nav nav-tabs">
+                <li class="active">
+                  <a data-toggle="tab" href="#details" aria-expanded="true"
+                    >技術規格</a
+                  >
+                </li>
+                <li class="">
+                  <a data-toggle="tab" href="#reviews" aria-expanded="false"
+                    >評論 (3)</a
+                  >
+                </li>
+              </ul>
+              <div class="tab-content patternbg">
+                <div id="details" class="tab-pane fade active in">
+                  <div>
+                    <h3 style="padding: 10px 0px 10px 0px">作業系統</h3>
+                    <div class="container222">
+                      <div class="item222">作業系統</div>
+                      <div class="item222">Windows 10 家用版</div>
+                      <div class="item222">作業系統架構</div>
+                      <div class="item222">64 位元</div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div>
+                    <h3 style="padding: 10px 0px 10px 0px">處理器</h3>
+                    <div class="container222">
+                      <div class="item222">處理器製造商</div>
+                      <div class="item222">Intel®</div>
+                      <div class="item222">處理器形式</div>
+                      <div class="item222">Core™ i7</div>
+                      <div class="item222">處理器型號</div>
+                      <div class="item222">i7-1065G7</div>
+                      <div class="item222">處理器速度</div>
+                      <div class="item222">1.30 GHz</div>
+                      <div class="item222">處理器核心數</div>
+                      <div class="item222">四核（四個核心）</div>
+                      <div class="item222">處理器世代</div>
+                      <div class="item222">第 10 代</div>
+                      <div class="item222">vPro技術</div>
+                      <div class="item222">否</div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div>
+                    <h3 style="padding: 10px 0px 10px 0px">
+                      螢幕顯示 & 圖形能力
+                    </h3>
+                    <div class="container222">
+                      <div class="item222">顯示晶片製造商</div>
+                      <div class="item222">Intel®</div>
+                      <div class="item222">顯示晶片規格</div>
+                      <div class="item222">Iris Plus Graphics</div>
+                      <div class="item222">顯示記憶體儲存</div>
+                      <div class="item222">共享</div>
+                      <div class="item222">螢幕尺寸</div>
+                      <div class="item222">35.6 cm (14")</div>
+                      <div class="item222">螢幕顯示型式</div>
+                      <div class="item222">LCD</div>
+                      <div class="item222">背光技術</div>
+                      <div class="item222">LED</div>
+                      <div class="item222">觸控支援</div>
+                      <div class="item222">有</div>
+                      <div class="item222">多觸式屏幕</div>
+                      <div class="item222">有</div>
+                      <div class="item222">解析度</div>
+                      <div class="item222">1920 x 1080</div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div>
+                    <h3 style="padding: 10px 0px 10px 0px">記憶體</h3>
+                    <div class="container222">
+                      <div class="item222">已安裝系統記憶體總量</div>
+                      <div class="item222">16 GB</div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div>
+                    <h3 style="padding: 10px 0px 10px 0px">儲存裝置</h3>
+                    <div class="container222">
+                      <div class="item222">固體硬盤總容量</div>
+                      <div class="item222">512 GB</div>
+                      <div class="item222">固態硬碟(SSD)介面</div>
+                      <div class="item222">PCI Express</div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div>
+                    <h3 style="padding: 10px 0px 10px 0px">內置裝置</h3>
+                    <div class="container222">
+                      <div class="item222">麥克風</div>
+                      <div class="item222">有</div>
+                      <div class="item222">喇叭數量</div>
+                      <div class="item222">2</div>
+                      <div class="item222">聲音模式</div>
+                      <div class="item222">立體聲</div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div>
+                    <h3 style="padding: 10px 0px 10px 0px">介面/連接埠</h3>
+                    <div class="container222">
+                      <div class="item222">HDMI</div>
+                      <div class="item222">有</div>
+                      <div class="item222">HDMI 輸出數目</div>
+                      <div class="item222">1</div>
+                      <div class="item222">USB 2.0 連接埠數量</div>
+                      <div class="item222">1</div>
+                      <div class="item222">USB 3.1 Gen 1 Type-A 連接埠數量</div>
+                      <div class="item222">1</div>
+                      <div class="item222">USB 3.1 Gen 2 Type-C 連接埠數量</div>
+                      <div class="item222">1</div>
+                      <div class="item222">USB 連接埠總數</div>
+                      <div class="item222">3</div>
+                      <div class="item222">USB Type-C</div>
+                      <div class="item222">有</div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div>
+                    <h3 style="padding: 10px 0px 10px 0px">輸入裝置</h3>
+                    <div class="container222">
+                      <div class="item222">指向裝置型式</div>
+                      <div class="item222">TouchPad</div>
+                      <div class="item222">鍵盤</div>
+                      <div class="item222">有</div>
+                      <div class="item222">觸控板功能</div>
+                      <div class="item222">多觸式手勢功能</div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div>
+                    <h3 style="padding: 10px 0px 10px 0px">電池資訊</h3>
+                    <div class="container222">
+                      <div class="item222">電池Cell數</div>
+                      <div class="item222">4-cell</div>
+                      <div class="item222">電池型式</div>
+                      <div class="item222">鋰電池</div>
+                      <div class="item222">電池使用時間</div>
+                      <div class="item222">12 小時</div>
+                      <div class="item222">電池效能功率</div>
+                      <div class="item222">56 Wh</div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div>
+                    <h3 style="padding: 10px 0px 10px 0px">實體特性</h3>
+                    <div class="container222">
+                      <div class="item222">高</div>
+                      <div class="item222">14.95 mm</div>
+                      <div class="item222">寬</div>
+                      <div class="item222">318.7 mm</div>
+                      <div class="item222">深</div>
+                      <div class="item222">210.5 mm</div>
+                      <div class="item222">重量（大約）</div>
+                      <div class="item222">990 g</div>
+                      <div class="item222">產品顏色</div>
+                      <div class="item222">白色</div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div>
+                    <h3 style="padding: 10px 0px 10px 0px">其他</h3>
+                    <div class="container222">
+                      <div class="item222">包裝內容</div>
+                      <div class="item222">
+                        Swift 5 SF514-54T-79C0 筆記型電腦
+                      </div>
+                      <div class="item222"></div>
+                      <div class="item222">鋰電池</div>
+                      <div class="item222"></div>
+                      <div class="item222">AC 變壓器</div>
+                    </div>
+                  </div>
+                </div>
+                <div id="reviews" class="tab-pane fade">
+                  <div class="post-comments">
+                    <ul class="media-list comments-list m-bot-50 clearlist">
+                      <!-- Comment CartItem start-->
+                      <li class="media">
+                        <a class="pull-left" href="#!">
+                          <img
+                            class="media-object comment-avatar"
+                            src="images/oShopBlack-no.png"
+                            alt=""
+                            width="50"
+                            height="50"
+                          />
+                        </a>
+
+                        <div class="media-body">
+                          <div class="comment-info">
+                            <h4 class="comment-author">
+                              <a href="#!">a******8</a>
+                            </h4>
+                            <time datetime="2013-04-06T13:53"
+                              >May 15, 2023, AM 11:35</time
+                            >
+                            <a class="comment-button" href="#!"
+                              ><i class="tf-ion-chatbubbles"></i>回覆</a
+                            >
+                          </div>
+
+                          <div class="rating">
+                            <span class="star" data-value="1">&#9733;</span>
+                            <span class="star" data-value="2">&#9733;</span>
+                            <span class="star" data-value="3">&#9733;</span>
+                            <span class="star" data-value="4">&#9733;</span>
+                            <span class="star" data-value="5">&#9733;</span>
+                          </div>
+
+                          <p>
+                            防撞包裝仔細、物流配送迅速且提前通知到貨，有問必答回覆速度很快，不推不行
+                            ^^
+                          </p>
+                        </div>
+                      </li>
+                      <!-- End Comment CartItem -->
+
+                      <!-- Comment CartItem start-->
+                      <li class="media">
+                        <a class="pull-left" href="#!">
+                          <img
+                            class="media-object comment-avatar"
+                            src="images/oShopBlack-no.png"
+                            alt=""
+                            width="50"
+                            height="50"
+                          />
+                        </a>
+
+                        <div class="media-body">
+                          <div class="comment-info">
+                            <div class="comment-author">
+                              <a href="#!">e******3</a>
+                            </div>
+                            <time datetime="2013-04-06T13:53"
+                              >May 13, 2023, PM 16:02</time
+                            >
+                            <a class="comment-button" href="#!"
+                              ><i class="tf-ion-chatbubbles"></i>回覆</a
+                            >
+                          </div>
+
+                          <div class="rating">
+                            <span class="star" data-value="1">&#9733;</span>
+                            <span class="star" data-value="2">&#9733;</span>
+                            <span class="star" data-value="3">&#9733;</span>
+                            <span class="star" data-value="4">&#9733;</span>
+                            <span class="star222" data-value="5">&#9733;</span>
+                          </div>
+
+                          <p>
+                            有遇一些小狀況，但店家很熱心幫忙，會馬上回覆，購買售後很安心！有需要會再回購的！
+                          </p>
+                        </div>
+                      </li>
+                      <!-- End Comment CartItem -->
+
+                      <!-- Comment CartItem start-->
+                      <li class="media">
+                        <a class="pull-left" href="#!">
+                          <img
+                            class="media-object comment-avatar"
+                            src="images/oShopBlack-no.png"
+                            alt=""
+                            width="50"
+                            height="50"
+                          />
+                        </a>
+
+                        <div class="media-body">
+                          <div class="comment-info">
+                            <div class="comment-author">
+                              <a href="#!">r******5</a>
+                            </div>
+                            <time datetime="2013-04-06T13:53"
+                              >May 01, 2023, AM 08:10</time
+                            >
+                            <a class="comment-button" href="#!"
+                              ><i class="tf-ion-chatbubbles"></i>回覆</a
+                            >
+                          </div>
+                          <div class="rating">
+                            <span class="star" data-value="1">&#9733;</span>
+                            <span class="star" data-value="2">&#9733;</span>
+                            <span class="star" data-value="3">&#9733;</span>
+                            <span class="star" data-value="4">&#9733;</span>
+                            <span class="star" data-value="5">&#9733;</span>
+                          </div>
+
+                          <p>
+                            出貨速度真的很快且包裝的很完整，收到貨很滿意，真心推薦喔！
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="products related-products section">
+      <div class="container">
+        <div class="row">
+          <div class="title text-center">
+            <h1>挑選最適合您的 Swift 5</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="product-item">
+              <div class="product-thumb">
+                <span class="bage">Sale</span>
+                <img
+                  class="img-responsive"
+                  src="images/single-product/SF514-54T-79C0/SF514-54T-79C0-1.png"
+                  alt="product-img"
+                />
+                <div class="preview-meta">
+                  <ul>
+                    <li>
+                      <span>
+                        <!-- <span  data-toggle="modal" data-target="#product-modal"></span> -->
+                        <i class="tf-ion-ios-search"></i>
+                      </span>
+                    </li>
+                    <li>
+                      <a href="#!"><i class="tf-ion-ios-heart"></i></a>
+                    </li>
+                    <li>
+                      <a href="#!"><i class="tf-ion-android-cart"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="product-content">
+                <h4><a href="product-single.html">Swift 5</a></h4>
+                SF514-54GT-5709 | UN.HU4TA.001
+                <!-- <p class="price">$200</p> -->
+                <div class="price">
+                  <span class="original-price">$39,000</span>
+                  <span class="new-price">$35,999</span>
+                </div>
+              </div>
+              <ul style="padding: 20px 0px 20px 0px">
+                <li style="padding: 10px 0px 10px 0px">Windows 10</li>
+                <li style="padding: 10px 0px 10px 0px">
+                  Intel® Core™ i5-1035G1 處理器 4核心 1 GHz
+                </li>
+                <li style="padding: 10px 0px 10px 0px">
+                  NVIDIA® GeForce® MX350 連 2 GB 專屬記憶體
+                </li>
+                <li style="padding: 10px 0px 10px 0px">
+                  35.6 cm (14") Full HD (1920 x 1080) 16:9 IPS 觸控支援
+                </li>
+                <li style="padding: 10px 0px 10px 0px">8 GB, LPDDR4</li>
+                <li style="padding: 10px 0px 10px 0px">512 GB SSD</li>
+              </ul>
+              <div class="text-center">
+                <button type="submit" class="btn btn-main text-center">
+                  探索
+                </button>
+              </div>
+              <div class="text-center" style="padding: 20px 0px 10px 0px">
+                <label>
+                  <input type="checkbox" value="remember-me" /> 加入比較
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="product-item">
+              <div class="product-thumb">
+                <img
+                  class="img-responsive"
+                  src="images/single-product/SF514-54T-79C0/SF514-54T-79C0-001.png"
+                  alt="product-img"
+                />
+                <div class="preview-meta">
+                  <ul>
+                    <li>
+                      <span>
+                        <!-- <span  data-toggle="modal" data-target="#product-modal"></span> -->
+                        <i class="tf-ion-ios-search"></i>
+                      </span>
+                    </li>
+                    <li>
+                      <a href="#!"><i class="tf-ion-ios-heart"></i></a>
+                    </li>
+                    <li>
+                      <a href="#!"><i class="tf-ion-android-cart"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="product-content">
+                <h4><a href="product-single.html">Swift 5</a></h4>
+                SF514-55T-56MP | UN.A35TA.001
+                <!-- <p class="price">$230</p> -->
+                <div class="price">
+                  <!-- <span class="original-price">$43,000</span> -->
+                  <span class="new-price">$38,000</span>
+                </div>
+              </div>
+              <ul style="padding: 20px 0px 20px 0px">
+                <li style="padding: 10px 0px 10px 0px">
+                  Windows 10 家用版 64 位元
+                </li>
+                <li style="padding: 10px 0px 10px 0px">
+                  Intel® Core™ i5-1135G7 處理器 4核心 2.40 GHz
+                </li>
+                <li style="padding: 10px 0px 10px 0px">
+                  Intel® Iris® Xe Graphics 共用記憶體
+                </li>
+                <li style="padding: 10px 0px 10px 0px">
+                  35.6 cm (14") Full HD (1920 x 1080) 16:9 IPS 觸控支援
+                </li>
+                <li style="padding: 10px 0px 10px 0px">8 GB, LPDDR4</li>
+                <li style="padding: 10px 0px 10px 0px">512 GB SSD</li>
+              </ul>
+              <div class="text-center">
+                <button type="submit" class="btn btn-main text-center">
+                  探索
+                </button>
+              </div>
+              <div class="text-center" style="padding: 20px 0px 10px 0px">
+                <label>
+                  <input type="checkbox" value="remember-me" /> 加入比較
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="product-item">
+              <div class="product-thumb">
+                <img
+                  class="img-responsive"
+                  src="images/single-product/SF514-54T-79C0/SF514-54T-79C0-000.png"
+                  alt="product-img"
+                />
+                <div class="preview-meta">
+                  <ul>
+                    <li>
+                      <span>
+                        <!-- <span  data-toggle="modal" data-target="#product-modal"></span> -->
+                        <i class="tf-ion-ios-search"></i>
+                      </span>
+                    </li>
+                    <li>
+                      <a href="#!"><i class="tf-ion-ios-heart"></i></a>
+                    </li>
+                    <li>
+                      <a href="#!"><i class="tf-ion-android-cart"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="product-content">
+                <h4><a href="product-single.html">Swift 5</a></h4>
+                SF514-55TA | UN.A6STA.004
+                <!-- <p class="price">$230</p> -->
+                <div class="price">
+                  <!-- <span class="original-price">$43,000</span> -->
+                  <span class="new-price">$42,000</span>
+                </div>
+              </div>
+              <ul style="padding: 20px 0px 20px 0px">
+                <li style="padding: 10px 0px 10px 0px">
+                  Windows 11 Home 64 位元
+                </li>
+                <li style="padding: 10px 0px 10px 0px">
+                  Intel® Core™ i7-1165G7 處理器 4核心 2.80 GHz
+                </li>
+                <li style="padding: 10px 0px 10px 0px">
+                  Intel® Iris® Xe Graphics 共用記憶體
+                </li>
+                <li style="padding: 10px 0px 10px 0px">
+                  35.6 cm (14") Full HD (1920 x 1080) 16:9 觸控支援
+                </li>
+                <li style="padding: 10px 0px 10px 0px">16 GB, LPDDR4X</li>
+                <li style="padding: 10px 0px 10px 0px">512 GB SSD</li>
+              </ul>
+              <div class="text-center">
+                <button type="submit" class="btn btn-main text-center">
+                  探索
+                </button>
+              </div>
+              <div class="text-center" style="padding: 20px 0px 10px 0px">
+                <label>
+                  <input type="checkbox" value="remember-me" /> 加入比較
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal product-modal fade" id="product-modal">
+      <button
+        type="button"
+        class="close"
+        data-dismiss="modal"
+        aria-label="Close"
+      >
+        <i class="tf-ion-close"></i>
+      </button>
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="modal-image">
+                  <img
+                    class="img-responsive"
+                    src="images/shop/products/modal-product.jpg"
+                  />
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="product-short-details">
+                  <h2 class="product-title">GM Pendant, Basalt Grey</h2>
+                  <p class="product-price">$200</p>
+                  <p class="product-short-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Rem iusto nihil cum. Illo laborum numquam rem aut officia
+                    dicta cumque.
+                  </p>
+                  <a href="#!" class="btn btn-main">Add To Cart</a>
+                  <a href="#!" class="btn btn-transparent"
+                    >View Product Details</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+	<!-- 頁尾區塊 -->
+	<footer class="footer section text-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<ul class="social-media">
+						<li>
+							<a href="https://www.facebook.com/themefisher">
+								<i class="tf-ion-social-facebook"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/themefisher">
+								<i class="tf-ion-social-instagram"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.twitter.com/themefisher">
+								<i class="tf-ion-social-github"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.pinterest.com/themefisher/">
+								<i class="tf-ion-android-mail"></i>
+							</a>
+						</li>
+					</ul>
+					<ul class="footer-menu text-uppercase">
+						<li>
+							<a href="contact.html">接觸</a>
+						</li>
+						<li>
+							<a href="shop.html">購物</a>
+						</li>
+						<li>
+							<a href="pricing.html">價格</a>
+						</li>
+						<li>
+							<a href="contact.html">隱私政策</a>
+						</li>
+					</ul>
+					<p class="copyright-text">版權 &copy;2021, 設計 &amp; 開發 <a
+							href="https://themefisher.com/">Themefisher</a></p>
+				</div>
+			</div>
+		</div>
+	</footer><!-- 頁尾區塊 -->
+
+    <!--
+    Essential Scripts
+    =====================================-->
+
+    <!-- Main jQuery -->
+    <script src="plugins/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap 3.1 -->
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Bootstrap Touchpin -->
+    <script src="plugins/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
+    <!-- Instagram Feed Js -->
+    <script src="plugins/instafeed/instafeed.min.js"></script>
+    <!-- Video Lightbox Plugin -->
+    <script src="plugins/ekko-lightbox/dist/ekko-lightbox.min.js"></script>
+    <!-- Count Down Js -->
+    <script src="plugins/syo-timer/build/jquery.syotimer.min.js"></script>
+
+    <!-- slick Carousel -->
+    <script src="plugins/slick/slick.min.js"></script>
+    <script src="plugins/slick/slick-animation.min.js"></script>
+
+    <!-- Google Mapl -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
+    <script type="text/javascript" src="plugins/google-map/gmap.js"></script>
+
+    <!-- Main Js File -->
+    <script src="js/script.js"></script>
+
+    <script>
+      var quantityInput = document.getElementById("product-quantity");
+
+      quantityInput.addEventListener("input", function () {
+        var value = parseInt(this.value);
+        if (value < 0) {
+          this.value = 0;
+        } else if (value > 3) {
+          this.value = 3;
+        }
+      });
+    </script>
+  </body>
+</html>
